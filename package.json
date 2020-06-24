@@ -1,0 +1,14 @@
+{
+  "name": "iosocket_tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial chat with iosocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Vasya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
