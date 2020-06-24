@@ -1,13 +1,5 @@
-import express from 'express';
-import http from 'http';
-import path from 'path';
+import socket from 'socket.io-client';
 
-const app = express();
-const httpServer = http.createServer(app);
+console.log('Scripts started');
 
-app.get('/', (req, res) => {
-  const pathToIndex = path.join(__dirname, '../assets/index.html');
-  res.sendFile(pathToIndex);
-});
-
-httpServer.listen(3000, () => console.log('Listening on *:3000'));
+let io = socket();

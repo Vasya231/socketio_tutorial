@@ -8,7 +8,7 @@ build:
 	npm run build
 
 run:
-	node ./dist/index.js
+	node ./dist/server/server.js
 
 lint:
 	npx eslint .
