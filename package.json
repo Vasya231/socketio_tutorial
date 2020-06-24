@@ -12,7 +12,7 @@
   "author": "Vasya",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vasya231/iosocket_tutorial.git"
+    "url": "https://github.com/Vasya231/socketio_tutorial.git"
   },
   "license": "ISC",
   "dependencies": {
