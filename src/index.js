@@ -1,5 +1,19 @@
 import socket from 'socket.io-client';
 
-console.log('Scripts started');
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Scripts started');
 
-let io = socket();
+  const io = socket();
+
+  const formElement = document.getElementById('chat-form');
+  console.log(document.body);
+
+  formElement.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const { target } = event;
+    const formData = new FormData(target);
+    const message = formData.get('message');
+    io.emit('chat message', message);
+    target.reset();
+  });
+});
